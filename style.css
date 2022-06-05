@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato & family= Libre+Bodoni:ital,wght@1,400;1,500;1,700 & display=swap');
+body{
+    font-family:'Lato', sans-serif;
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+ }
+ body .page{
+     margin: 20px 80px;
+}
+/*barre de navigation*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #141414;
+    padding: 10px 0px;
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+nav .onglets a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+btn{
+    background-color: #080bec;
+    color: #15dea5;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    transform: scale(1);
+    transition-property: transform 20s;
+    transition-duration: 1s;
+    text-align: center;
+    margin: 0px;
+}
+
+.btn:hover{
+    transform: scale(2.15);
+    background-color: #e20707;
+    border-radius: 10rem;
+}
+a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+nav .recherche{
+    cursor: pointer;
+}
+nav .buttons .login{
+    background-color: inherit;
+    margin-right: 10px;
+    color: #8f8f8f;
+}
+nav .buttons .register{
+    background-color: #e20707;
+    margin-right: 10px;
+    color: #fff;
+}
+/*fin de la barre de navigation*/
+/*Début header*/
+header{
+    margin-top: 20px;
+    
+}
+aside{
+  float: right;
+    cursor: pointer;
+    margin-right: 60px;
+    
+}
+aside:hover{
+    color: #e20707;
+    
+}
+header h1{
+    color: red;
+    text-align:center;
+    font-size:60px;
+}
+.rens{
+    margin-inline-end: auto;
+}
+.val{
+    margin-top: 30px;
+}
+
+.recherche:active{
+    border: #080bec solid 2px;
+}
+
+.recherche:hover{
+    cursor: pointer;
+}
+/*fin du header*/
+/*debut du pied de page*/
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color:#828282 ;
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formgroup{
+    border: 1px solid #6300a0;
+    border-radius: 10px;
+    color: rgb(160, 156, 156);
+    font-size: 1rem;
+    outline: none;
+    padding: .5rem .5rem;
+
+}
+.formgroup:focus{
+    border: 2px solid #6300a0;
+}
+
+.formgroup:invalid{
+    background: #b20a37;
+    border: 2px solid #b20a37;
+    color: #fff;
+}
+/*fin du pied de page*/
+
+@media screen and(max-width:640px){
+    nav{
+        display: none;
+    }
+    body .page{
+        margin: 10px;
+    }
+    header{
+        margin-top: 20px;
+    }
+    header h1{
+        text-align: left;
+    }
+    p
+}
